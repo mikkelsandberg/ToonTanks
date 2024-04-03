@@ -88,6 +88,22 @@
 		"directory": "C:\\UnrealEngine\\UE_5.1\\Engine\\Source"
 	},
 	{
+		"file": "C:\\Users\\mikkelsandberg\\Documents\\Unreal Projects\\ToonTanks\\Source\\ToonTanks\\ToonTanksGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\mikkelsandberg\\Documents\\Unreal Projects\\ToonTanks\\.vscode\\compileCommands_Default\\ToonTanks.249.rsp"
+		],
+		"directory": "C:\\UnrealEngine\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\mikkelsandberg\\Documents\\Unreal Projects\\ToonTanks\\Source\\ToonTanks\\ToonTanksGameMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\cl.exe",
+			"@C:\\Users\\mikkelsandberg\\Documents\\Unreal Projects\\ToonTanks\\.vscode\\compileCommands_Default\\ToonTanks.249.rsp"
+		],
+		"directory": "C:\\UnrealEngine\\UE_5.1\\Engine\\Source"
+	},
+	{
 		"file": "C:\\Users\\mikkelsandberg\\Documents\\Unreal Projects\\ToonTanks\\Source\\ToonTanks\\Tower.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\cl.exe",
