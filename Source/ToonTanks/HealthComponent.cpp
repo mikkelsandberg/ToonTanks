@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "HealthComponent.h"
 
 // Sets default values for this component's properties
@@ -13,7 +12,6 @@ UHealthComponent::UHealthComponent()
 	// ...
 }
 
-
 // Called when the game starts
 void UHealthComponent::BeginPlay()
 {
@@ -24,9 +22,8 @@ void UHealthComponent::BeginPlay()
 	GetOwner()->OnTakeAnyDamage.AddDynamic(this, &UHealthComponent::DamageTaken);
 }
 
-
 // Called every frame
-void UHealthComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+void UHealthComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
@@ -35,10 +32,9 @@ void UHealthComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 
 void UHealthComponent::DamageTaken(AActor *DamagedActor, float Damage, const UDamageType *DamageType, class AController *Instigator, AActor *DamageCauser)
 {
-	UE_LOG(LogTemp, Display, TEXT("DamagedActor: %s"), *DamagedActor->GetName());
-	UE_LOG(LogTemp, Display, TEXT("Damage: %f"), Damage);
-	UE_LOG(LogTemp, Display, TEXT("DamageType: %s"), *DamageType->GetName());
-	UE_LOG(LogTemp, Display, TEXT("Instigator: %s"), *Instigator->GetName());
-	UE_LOG(LogTemp, Display, TEXT("DamageCauser: %s"), *DamageCauser->GetName());
+	if (Damage <= 0.f)
+		return;
+	
+	Health -= Damage;
+	UE_LOG(LogTemp, Warning, TEXT("Health: %f"), Health);
 }
-
